@@ -1,0 +1,77 @@
+#msg {
+  text-align: center;
+}
+
+#gameBoard {
+  width:700px;
+  height:700px;
+  margin: 0 auto;
+}
+
+.space {
+  width:223px;
+  height:223px;
+  float:left;
+}
+
+.space:hover {
+  cursor: pointer;
+}
+
+#tl {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#tm {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+}
+
+#tr {
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#ml {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
+
+#mm {
+  border: 5px solid black;
+}
+
+#mr {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+}
+
+#bl {
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+#bm {
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+#br {
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.wrapper {
+  width:1024px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.p2module {
+  display:none;
+}

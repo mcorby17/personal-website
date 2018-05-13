@@ -1,0 +1,419 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Yellowtail|Righteous');
+/* font-family: 'Share Tech Mono', monospace;
+font-family: 'Yellowtail', cursive; */
+
+html, body {
+    margin:0;
+    height:100%;
+}
+
+h3 {
+	font-family: 'Share Tech Mono', monospace;
+  color:white;
+}
+
+/* Menu Stuff */
+#menu {
+	width:230px;
+	min-height:50px;
+	float: left;
+  margin: 10px 0px;
+	background-color:rgba(255,96,112,.8);
+  font-family: 'Share Tech Mono', sans-serif;
+	font-size:15px;
+	position:fixed;
+	z-index:3;
+  border-radius: 0 50px 50px 0;
+  border: 3px solid black;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#menu ul li {
+
+}
+
+#menu ul a {
+  text-decoration: none;
+  color:white;
+  transition: color, 1s;
+}
+
+#menu li a:hover {
+	color:black;
+}
+
+#menu h1 {
+  font-family: 'Yellowtail', cursive;
+  text-align: center;
+
+}
+
+.wrapper {
+	width: 1024px;
+	min-height:10px;
+	margin: 0 auto;
+}
+
+.wrapper a:link, a:visited {
+  color:white;
+}
+
+/* Reusable Designs */
+.opaqueDesign {
+  background-color: rgba(1,26,90,.85);
+}
+
+.popout {
+  transition: box-shadow 1s, margin-top 1s;
+}
+
+.popout:hover {
+  box-shadow: 0 0 100px black;
+  cursor: pointer;
+  margin-top:15px;
+  z-index:3;
+}
+
+.codeText {
+  font-family: 'Share Tech Mono', monospace;
+}
+/* End Reusable Designs */
+
+.big-square {
+  width:600px;
+  height:400px;
+  float:left;
+  margin: 48px 40px;
+  z-index:1;
+}
+
+.big-square img {
+  margin: 5px;
+  z-index:1;
+}
+
+.pulldown {
+  width:200px;
+  height:40px;
+  text-align: center;
+  line-height: 50px;
+  z-index:0;
+  margin-top:-80px;
+}
+
+.pulldown h3 {
+  z-index:-1;
+}
+
+.vertical-rectangle {
+  width:300px;
+  height:400px;
+  float:left;
+  margin: 48px 2px;
+}
+
+.vertical-rectangle h3 {
+  margin:30px 10px;
+  text-align: center;
+}
+
+.halfCol {
+	width:480px;
+	height:470px;
+	float:left;
+	margin: 10px;
+	overflow:hidden;
+  position:relative;
+  z-index: 1;
+}
+
+.halfColCircle {
+  border-radius: 350px;
+  border: 5px solid #E3AB53;
+}
+
+.leftCol {
+	opacity:.9;
+}
+
+.halfCol .avatar {
+	width: 500px;
+	transition: all .5s linear;
+}
+
+.halfCol .avatar:hover {
+	transform: scale(1.1);
+}
+
+.halfCol h3 {
+	margin: 10px 20px;
+	color:white;
+}
+
+.wideRow {
+  width:1000px;
+  height:150px;
+  float:left;
+  margin: 10px 10px;
+  border: 1px solid black;
+  z-index:0;
+}
+
+.wideRow h3 {
+  margin: 45px 20px;
+  text-align: center;
+}
+
+.oneThird {
+  width: 280px;
+  height: 280px;
+  float:left;
+  margin: 10px 28px;
+  border: 1px solid black;
+}
+
+.oneThird img {
+  margin:10px;
+}
+
+.fullRow {
+  width:1022px;
+  height: 248px;
+  float:left;
+}
+
+.twoThirdsRow {
+  width:638px;
+  height:220px;
+  float:left;
+  margin: 14px 18px;
+}
+
+.twoThirdsRow h3 {
+  margin:60px 20px;
+  text-align:center;
+}
+
+.box {
+  width:300px;
+  height:220px;
+  float:left;
+  margin: 14px 18px;
+}
+
+.box img {
+  margin:5px 0px;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+  padding:20px 40px;
+  margin:40px 75px;
+  background-color: #7CCC1C;
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+  color:white;
+}
+
+.bigBox {
+  width:450px;
+  height:300px;
+  float:left;
+  position: absolute;
+  margin: 14px 40px;
+  transition: box-shadow, 1s;
+}
+
+.bigBox:hover {
+  z-index:4;
+  box-shadow: 0 0 100px black;
+}
+
+.bigBox img {
+  margin: 10px;
+}
+
+.bottom {
+  z-index: 0;
+}
+
+.middle {
+  z-index: 1;
+  margin:100px 270px;
+}
+
+.top {
+  z-index: 2;
+  margin: 180px 530px;
+}
+
+.parallax {
+  min-height:500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.codeParallax {
+  background-image: url("../images/code.jpg");
+}
+
+.newParallax {
+  background-image: url("../images/explosion.jpg");
+  text-align: center;
+  font-family: 'Yellowtail', cursive;
+  color:white;
+}
+
+.newParallax h1 {
+  margin:70px;
+}
+
+.newParallax .oneThird {
+  margin: 100px 28px;
+}
+
+.htmlParallax {
+	background-image: url("../images/html5-css3.png");
+}
+
+.cppParallax {
+	background-image: url("../images/cpp.png");
+}
+
+.unrealParallax {
+	background-image: url("../images/unreal-engine.png");
+}
+
+.hardwareParallax {
+	background-image: url("../images/computerHardware.jpg");
+}
+
+.section {
+  background-color:#011A5A;
+  text-align: center;
+  color:white;
+  font-size: 30px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.sig {
+  width:75%;
+  margin-left:120px;
+  transition: transform 2s;
+}
+
+.sig:hover {
+  transform: rotate(360deg);
+}
+
+/* Colors */
+.yellow {
+	color:#CFE00F;
+}
+
+.red {
+	color:#FF6070;
+}
+
+.green {
+	color:#7CCC1C;
+}
+
+.orange {
+	color:#E3AB53;
+}
+
+.blue {
+	color:#5CC4FF;
+}
+/* End colors */
+
+/* modal */
+.modal {
+  display: none;
+  position:fixed;
+  z-index: 3;
+  left:0;
+  top: 0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 50px auto;
+  padding:20px;
+  border: 1px solid #888;
+  width:70%;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
+.modal-content iframe {
+  margin: 20px 100px;
+}
+
+.small-content {
+  width:30%;
+}
+
+.small-content h1 {
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
+
+.close {
+  color: #aaaaaa;
+  float:right;
+  font-size:28px;
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal table {
+  width:90%;
+  border-collapse: collapse;
+  margin:30px;
+}
+
+.modal tr {
+  height: 30px;
+}
+
+.modal tr:hover {
+  background-color: #f5f5f5;
+}
+
+.modal th, td {
+  border-bottom: 1px solid #ddd;
+}
+/* end of modal */
+
+.dropcap {
+  font-size: 60px;
+  float:left;
+  padding:10px;
+  margin-right:5px;
+  line-height: 40px;
+  font-family: 'Righteous', cursive;
+  background-color: #CFE00F;
+}
